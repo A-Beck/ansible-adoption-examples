@@ -85,6 +85,9 @@ class InventoryModule(BaseInventoryPlugin):
                 # Add host to inventory
                 self.inventory.add_host(hostname)
                 
+                # Add host_number variable
+                self.inventory.set_variable(hostname, 'host_number', i)
+                
                 # Add to appropriate group based on number
                 group = group_evens if i % 2 == 0 else group_odds
                 self.inventory.add_child(group, hostname)
