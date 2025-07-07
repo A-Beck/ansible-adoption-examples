@@ -2,5 +2,6 @@
 offline: true
 
 mock_modules:
-  - cisco.ios
+  - cisco.ios.ios_facts
+  - cisco.ios.ios_config
 ...
