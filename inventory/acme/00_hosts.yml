@@ -2,4 +2,4 @@
 # This will create 15 hosts in the domain acme-corp.com
 plugin: anbecker.examples.acme
 host_count: 15
-domain: acme-corp.com 
+domain: acme-corp.com

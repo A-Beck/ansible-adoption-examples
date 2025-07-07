@@ -29,10 +29,10 @@ DOCUMENTATION = '''
 '''
 
 EXAMPLES = '''
-    # Example configuration file (acme.yml)
-    plugin: anbecker.examples.acme
-    host_count: 5
-    domain: mycompany.com
+# Example configuration file (acme.yml)
+plugin: anbecker.examples.acme
+host_count: 5
+domain: mycompany.com
 '''
 
 from ansible.plugins.inventory import BaseInventoryPlugin

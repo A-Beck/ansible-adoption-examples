@@ -1,0 +1,6 @@
+---
+offline: true
+
+mock_modules:
+  - cisco.ios
+...
