@@ -3,9 +3,14 @@
 - hosts: localhost
   gather_facts: false
   tasks:
+
+    - ansible.builtin.assert:
+        that: 
+          - namespace is defined
     - name: Get a list of all pods from any namespace
       kubernetes.core.k8s_info:
         kind: Pod
+        namespace: "{{ namespace }}"
       register: pod_list
 
     - debug: var=pod_list verbosity=3
